@@ -3,11 +3,11 @@ package a_Arrays;
 import java.util.ArrayList;
 import java.util.List;
 
-public class g_MajorityElement_Greater_Than_nBy3 {
+public class h_MajorityElement_Greater_Than_nBy3 {
 
     public static void main(String[] args) {
         int arr[] = {3,2,3};
-        g_MajorityElement_Greater_Than_nBy3 majorityElementGreaterThanNBy3 = new g_MajorityElement_Greater_Than_nBy3();
+        h_MajorityElement_Greater_Than_nBy3 majorityElementGreaterThanNBy3 = new h_MajorityElement_Greater_Than_nBy3();
         List<Integer> result = majorityElementGreaterThanNBy3.majorityElement(arr);
         for (int i=0;i<result.size();i++){
             System.out.print(result.get(i)+" ");
