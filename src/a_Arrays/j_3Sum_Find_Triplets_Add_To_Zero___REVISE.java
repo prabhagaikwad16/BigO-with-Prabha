@@ -35,11 +35,11 @@ Constraints:
 3 <= nums.length <= 3000
 -105 <= nums[i] <= 105*/
 
-public class i_3Sum_Find_Triplets_Add_To_Zero___REVISE {
+public class j_3Sum_Find_Triplets_Add_To_Zero___REVISE {
     public static void main(String[] args) {
         int arr[] = {-1,0,1,2,-1,-4};
 
-        i_3Sum_Find_Triplets_Add_To_Zero___REVISE g3SumFindTripletsAddToZero = new i_3Sum_Find_Triplets_Add_To_Zero___REVISE();
+        j_3Sum_Find_Triplets_Add_To_Zero___REVISE g3SumFindTripletsAddToZero = new j_3Sum_Find_Triplets_Add_To_Zero___REVISE();
         List<List<Integer>> result = g3SumFindTripletsAddToZero.threeSum(arr);
         for(List<Integer> list : result){
             System.out.println(list);
