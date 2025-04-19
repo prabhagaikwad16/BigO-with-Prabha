@@ -4,13 +4,13 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Stack;
 
-public class a_FindNextGreaterElement_In_Different_Arrays {
+public class b_FindNextGreaterElement_In_Different_Arrays {
 
     public static void main(String[] args) {
         int arr1[] = {4,1,2};
         int arr2[] = {1,3,4,2};
 
-        a_FindNextGreaterElement_In_Different_Arrays findNextGreaterElementInDifferentArrays = new a_FindNextGreaterElement_In_Different_Arrays();
+        b_FindNextGreaterElement_In_Different_Arrays findNextGreaterElementInDifferentArrays = new b_FindNextGreaterElement_In_Different_Arrays();
         int result[] = findNextGreaterElementInDifferentArrays.nextGreaterElement(arr1,arr2);
 
         for(int i: result){
