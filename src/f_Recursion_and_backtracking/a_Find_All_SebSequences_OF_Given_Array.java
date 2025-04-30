@@ -1,4 +1,4 @@
-package f_Recursion;
+package f_Recursion_and_backtracking;
 
 import java.util.ArrayList;
 import java.util.List;
