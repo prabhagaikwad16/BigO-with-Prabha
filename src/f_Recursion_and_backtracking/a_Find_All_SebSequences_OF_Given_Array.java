@@ -9,14 +9,14 @@ public class a_Find_All_SebSequences_OF_Given_Array {
         int arr[] = {3,1,2};
 
         a_Find_All_SebSequences_OF_Given_Array findAllSebSequencesOfGivenArray = new a_Find_All_SebSequences_OF_Given_Array();
-        List<List<Integer>> result = findAllSebSequencesOfGivenArray.findSequences(arr);
+        List<List<Integer>> result = findAllSebSequencesOfGivenArray.subsets(arr);
         System.out.println("All subsequences of the given array are: ");
         for(List<Integer> subSequence : result){
             System.out.println(subSequence);
         }
     }
 
-    public List<List<Integer>> findSequences(int[] arr) {
+    public List<List<Integer>> subsets(int[] arr) {
         List<List<Integer>> result = new ArrayList<>();
         findAllSubSequences(0, arr, new ArrayList<>(), result);
         return result;

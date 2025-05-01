@@ -9,12 +9,12 @@ public class b_Find_SubArray_Sum_K {
 
         int arr[] = {1,1,1};
         int target = 2;
-        b_Find_SubArray_Sum_K findSubArraySumK = new b_Find_SubArray_Sum_K();
-        int result = findSubArraySumK.subarraySum(arr,target);
+        //b_Find_SubArray_Sum_K findSubArraySumK = new b_Find_SubArray_Sum_K();
+        int result = subsequencesSumK(arr,target);
         System.out.println("Total subarrays with sum " + target + " = " + result);
     }
 
-    public int subarraySum(int arr[],int expectedSum){
+    public static int subsequencesSumK(int arr[],int expectedSum){
         List<List<Integer>> result = new ArrayList<>();
         findSubArraysWithSumK(0,arr,new ArrayList<>(),0,expectedSum,result);
         for(List list: result){
@@ -23,7 +23,7 @@ public class b_Find_SubArray_Sum_K {
         return result.size();
     }
 
-    private void findSubArraysWithSumK(int index, int arr[], List<Integer> subArray,int currentSum, int target, List<List<Integer>> result){
+    private static void findSubArraysWithSumK(int index, int arr[], List<Integer> subArray,int currentSum, int target, List<List<Integer>> result){
 
         if(index == arr.length){
             if(currentSum == target){
