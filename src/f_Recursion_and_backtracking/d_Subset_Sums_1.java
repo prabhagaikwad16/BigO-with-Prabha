@@ -4,12 +4,12 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class d_Subset_Sums {
+public class d_Subset_Sums_1 {
 
     public static void main(String[] args) {
         int arr[] = {5, 2, 1};
 
-        d_Subset_Sums subsetSums = new d_Subset_Sums();
+        d_Subset_Sums_1 subsetSums = new d_Subset_Sums_1();
         List<Integer> result = subsetSums.subsetSums(arr);
         System.out.println("Subset Sums:");
         for(Integer i: result){
