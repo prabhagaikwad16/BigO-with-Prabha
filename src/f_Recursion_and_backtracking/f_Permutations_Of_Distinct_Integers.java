@@ -1,15 +1,14 @@
 package f_Recursion_and_backtracking;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
-public class d_Permutations_Of_Distinct_Integers {
+public class f_Permutations_Of_Distinct_Integers {
 
     public static void main(String[] args) {
 
         int arr[] = {1,2,3};
-        d_Permutations_Of_Distinct_Integers permutationsOfDistinctIntegers = new d_Permutations_Of_Distinct_Integers();
+        f_Permutations_Of_Distinct_Integers permutationsOfDistinctIntegers = new f_Permutations_Of_Distinct_Integers();
         List<List<Integer>> result = permutationsOfDistinctIntegers.permute(arr);
 
     }
