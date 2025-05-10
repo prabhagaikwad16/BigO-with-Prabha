@@ -14,6 +14,7 @@ public class c_JumpGame_1 {
     public boolean canJump(int[] arr) {
         int goal = arr.length-1;
 
+        //Traverse from back and set new goal each time if last index is reachable.
         for(int i=arr.length-2; i>=0; i--){
             if(i+arr[i]>=goal){
                 goal = i;
