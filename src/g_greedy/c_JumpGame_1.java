@@ -12,23 +12,14 @@ public class c_JumpGame_1 {
 
 
     public boolean canJump(int[] arr) {
-        int maxLength = 0;
-        int max = 0;
-        for(int i=0;i< arr.length; i++){
+        int goal = arr.length-1;
 
-            if(i>maxLength){
-                return false;
+        for(int i=arr.length-2; i>=0; i--){
+            if(i+arr[i]>=goal){
+                goal = i;
             }
-            else if(maxLength>=arr.length){
-                return true;
-            }
-
-            //standing at index i and can jump to index arr[i]
-            max = i+arr[i];
-            maxLength = maxLength<max?max:maxLength;
-
         }
 
-        return true;
+        return goal == 0;
     }
 }
