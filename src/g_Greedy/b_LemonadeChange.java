@@ -1,4 +1,4 @@
-package g_greedy;
+package g_Greedy;
 
 public class b_LemonadeChange {
     public static void main(String[] args) {

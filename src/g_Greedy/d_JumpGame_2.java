@@ -1,4 +1,4 @@
-package g_greedy;
+package g_Greedy;
 
 public class d_JumpGame_2 {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package g_greedy;
+package g_Greedy;
 
 public class c_JumpGame_1 {
 
