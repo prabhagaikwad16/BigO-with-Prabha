@@ -25,6 +25,8 @@ Constraints:
 -104 <= nums[i] <= 104
  */
 
+//Observation--> The approach is same like finding element in an array which is greater than n/2
+
 public class a_KadaneAlgo_MaxSum {
 
     public static void main(String[] args) {
@@ -46,7 +48,7 @@ public class a_KadaneAlgo_MaxSum {
 
         for (int i = 0; i < arr.length; i++) {
 
-            sum = sum + arr[i]; // Add current element to running sum
+            sum = sum + arr[i]; // Add current element to running-sum
 
             // Update maxSum if current running sum is greater
             if (maxSum < sum) {
