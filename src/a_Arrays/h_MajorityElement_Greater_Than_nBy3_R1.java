@@ -26,11 +26,11 @@ Constraints:
 1 <= nums.length <= 5 * 104
 -109 <= nums[i] <= 109
  */
-public class h_MajorityElement_Greater_Than_nBy3 {
+public class h_MajorityElement_Greater_Than_nBy3_R1 {
 
     public static void main(String[] args) {
         int arr[] = {3,2,3};
-        h_MajorityElement_Greater_Than_nBy3 majorityElementGreaterThanNBy3 = new h_MajorityElement_Greater_Than_nBy3();
+        h_MajorityElement_Greater_Than_nBy3_R1 majorityElementGreaterThanNBy3 = new h_MajorityElement_Greater_Than_nBy3_R1();
         List<Integer> result = majorityElementGreaterThanNBy3.majorityElement(arr);
         for (int i=0;i<result.size();i++){
             System.out.print(result.get(i)+" ");

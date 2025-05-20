@@ -1,6 +1,6 @@
 package a_Arrays;
 
-public class g_MajorityElement_Greater_Than_nBy2 {
+public class g_MajorityElement_Greater_Than_nBy2_R1 {
 
     /*Given an array nums of size n, return the majority element.
 
@@ -28,7 +28,7 @@ n == nums.length
     public static void main(String[] args) {
         int arr[] = {2, 2, 1, 1, 1, 2, 2};
 
-        g_MajorityElement_Greater_Than_nBy2 majorityElementGreaterThanNBy2 = new g_MajorityElement_Greater_Than_nBy2();
+        g_MajorityElement_Greater_Than_nBy2_R1 majorityElementGreaterThanNBy2 = new g_MajorityElement_Greater_Than_nBy2_R1();
         int result = majorityElementGreaterThanNBy2.majorityElement(arr);
         if(result==-1){
             System.out.println("No majority element is present");

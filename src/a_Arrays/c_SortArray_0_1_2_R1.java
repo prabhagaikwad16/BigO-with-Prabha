@@ -25,10 +25,10 @@ n == nums.length
 1 <= n <= 300
 nums[i] is either 0, 1, or 2.*/
 
-public class c_SortArray_0_1_2 {
+public class c_SortArray_0_1_2_R1 {
     public static void main(String[] args) {
         int arr[] = {2,0,2,1,1,0};
-        c_SortArray_0_1_2 sortArray = new c_SortArray_0_1_2();
+        c_SortArray_0_1_2_R1 sortArray = new c_SortArray_0_1_2_R1();
         sortArray.sortColors(arr);
         for (int i : arr) {
             System.out.print(i + " ");

@@ -27,11 +27,11 @@ Constraints:
 
 //Observation--> The approach is same like finding element in an array which is greater than n/2
 
-public class a_KadaneAlgo_MaxSum {
+public class a_KadaneAlgo_MaxSum_R1 {
 
     public static void main(String[] args) {
         int arr[] = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
-        a_KadaneAlgo_MaxSum aKadaneAlgoMaxSum = new a_KadaneAlgo_MaxSum();
+        a_KadaneAlgo_MaxSum_R1 aKadaneAlgoMaxSum = new a_KadaneAlgo_MaxSum_R1();
         int maxSum = aKadaneAlgoMaxSum.maxSubArray(arr);
         System.out.printf("max sum = " + maxSum);
     }

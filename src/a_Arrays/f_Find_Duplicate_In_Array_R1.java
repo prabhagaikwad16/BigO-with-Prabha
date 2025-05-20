@@ -31,12 +31,12 @@ All the integers in nums appear only once except for precisely one integer which
 
 
 
-public class f_Find_Duplicate_In_Array___REVISE {
+public class f_Find_Duplicate_In_Array_R1 {
 
     public static void main(String[] args) {
         int arr[] = {3,1,3,4,2};
 
-        f_Find_Duplicate_In_Array___REVISE findDuplicateInArray = new f_Find_Duplicate_In_Array___REVISE();
+        f_Find_Duplicate_In_Array_R1 findDuplicateInArray = new f_Find_Duplicate_In_Array_R1();
         int duplicate = findDuplicateInArray.findDuplicate(arr);
         System.out.println("Duplicate number is = " + duplicate);
     }

@@ -34,11 +34,11 @@ Constraints:
 -109 <= target <= 109
 Only one valid answer exists.*/
 
-public class i_2Sum {
+public class i_2Sum_R1 {
     public static void main(String[] args) {
         int arr[]= {2,7,11,15};
         int target=20;
-        i_2Sum twoSum = new i_2Sum();
+        i_2Sum_R1 twoSum = new i_2Sum_R1();
         boolean isPresent = twoSum.twoSumPresent(arr, target);
         System.out.println("Is pair present = "+isPresent);
         int[] result = twoSum.twoSum(arr, target);

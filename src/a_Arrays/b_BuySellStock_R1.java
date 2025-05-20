@@ -27,11 +27,11 @@ Constraints:
 0 <= prices[i] <= 104
 */
 
-public class b_BuySellStock {
+public class b_BuySellStock_R1 {
     public static void main(String[] args) {
         int arr[] = {-2,1,-3,4,-1,2,1,-5,4};
 
-        b_BuySellStock buySellStock = new b_BuySellStock();
+        b_BuySellStock_R1 buySellStock = new b_BuySellStock_R1();
         int profit = buySellStock.maxProfit(arr);
         System.out.printf("Max profit = "+profit);
     }
