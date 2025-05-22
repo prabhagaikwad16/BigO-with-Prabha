@@ -20,12 +20,12 @@ Constraints:
 1 ≤ arr.size() ≤ 106
 −103 ≤ arr[i] ≤ 103, for each valid i*/
 
-public class k_SubArray_Longest_0_Sum_R1 {
+public class k_SubArray_Longest_0_Sum_REVISE {
 
     public static void main(String[] args) {
         int[] arr = {1, 2, -3, 3};
 
-        k_SubArray_Longest_0_Sum_R1 solver = new k_SubArray_Longest_0_Sum_R1();
+        k_SubArray_Longest_0_Sum_REVISE solver = new k_SubArray_Longest_0_Sum_REVISE();
         int maxSubArrayLength = solver.longestZeroSumSubarray(arr);
         System.out.println("Longest subarray with sum 0 length: " + maxSubArrayLength);
     }

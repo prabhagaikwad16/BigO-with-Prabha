@@ -34,10 +34,10 @@ Constraints:
 0 <= nums[i] <= 100*/
 
 
-public class d_NextPermutation_Of_Number_R1 {
+public class d_NextPermutation_Of_Number_R2 {
     public static void main(String[] args) {
         int arr[] = {3, 2, 1};
-        d_NextPermutation_Of_Number_R1 nextPermutation = new d_NextPermutation_Of_Number_R1();
+        d_NextPermutation_Of_Number_R2 nextPermutation = new d_NextPermutation_Of_Number_R2();
         nextPermutation.nextPermutation(arr);
         for (int i : arr) {
             System.out.print(i + " ");

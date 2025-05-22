@@ -1,34 +1,34 @@
 package a_Arrays;
 
-public class g_MajorityElement_Greater_Than_nBy2_R1 {
+public class g_MajorityElement_Greater_Than_nBy2_R2 {
 
     /*Given an array nums of size n, return the majority element.
 
-The majority element is the element that appears more than ⌊n / 2⌋ times. You may assume that the majority element always exists in the array.
+    The majority element is the element that appears more than ⌊n / 2⌋ times. You may assume that the majority element always exists in the array.
 
 
 
-Example 1:
+    Example 1:
 
-Input: nums = [3,2,3]
-Output: 3
-Example 2:
+    Input: nums = [3,2,3]
+    Output: 3
+    Example 2:
 
-Input: nums = [2,2,1,1,1,2,2]
-Output: 2
+    Input: nums = [2,2,1,1,1,2,2]
+    Output: 2
 
 
-Constraints:
+    Constraints:
 
-n == nums.length
-1 <= n <= 5 * 104
--109 <= nums[i] <= 109
-*/
+    n == nums.length
+    1 <= n <= 5 * 104
+    -109 <= nums[i] <= 109
+    */
 
     public static void main(String[] args) {
         int arr[] = {2, 2, 1, 1, 1, 2, 2};
 
-        g_MajorityElement_Greater_Than_nBy2_R1 majorityElementGreaterThanNBy2 = new g_MajorityElement_Greater_Than_nBy2_R1();
+        g_MajorityElement_Greater_Than_nBy2_R2 majorityElementGreaterThanNBy2 = new g_MajorityElement_Greater_Than_nBy2_R2();
         int result = majorityElementGreaterThanNBy2.majorityElement(arr);
         if(result==-1){
             System.out.println("No majority element is present");

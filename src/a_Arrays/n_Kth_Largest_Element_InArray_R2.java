@@ -2,7 +2,7 @@ package a_Arrays;
 
 import java.util.PriorityQueue;
 
-public class n_Kth_Largest_Element_InArray_R1 {
+public class n_Kth_Largest_Element_InArray_R2 {
 
     public static void main(String[] args) {
         int[] arr = {1, 2, 3, 4, 5};

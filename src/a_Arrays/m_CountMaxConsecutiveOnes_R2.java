@@ -1,11 +1,11 @@
 package a_Arrays;
 
-public class m_CountMaxConsecutiveOnes_R1 {
+public class m_CountMaxConsecutiveOnes_R2 {
     public static void main(String[] args) {
 
         int arr[] = {1,0,1,1,0,1};
 
-        m_CountMaxConsecutiveOnes_R1 maxConsecutiveOnes = new m_CountMaxConsecutiveOnes_R1();
+        m_CountMaxConsecutiveOnes_R2 maxConsecutiveOnes = new m_CountMaxConsecutiveOnes_R2();
         int max = maxConsecutiveOnes.findMaxConsecutiveOnes(arr);
         System.out.println("Max = "+max);
     }

@@ -41,6 +41,16 @@ public class f_Find_Duplicate_In_Array_R1 {
         System.out.println("Duplicate number is = " + duplicate);
     }
 
+    /*This approach only works when:
+
+    The array has n + 1 elements.
+
+    All elements are in the range [1, n].
+
+    There is at least one duplicate.*/
+
+
+
     public int findDuplicate(int arr[]) {
         // Initialize slow and fast pointers
         int slow = arr[0];

@@ -27,36 +27,30 @@ Constraints:
 0 <= prices[i] <= 104
 */
 
-public class b_BuySellStock_R1 {
+public class b_BuySellStock_R2 {
     public static void main(String[] args) {
         int arr[] = {-2,1,-3,4,-1,2,1,-5,4};
 
-        b_BuySellStock_R1 buySellStock = new b_BuySellStock_R1();
+        b_BuySellStock_R2 buySellStock = new b_BuySellStock_R2();
         int profit = buySellStock.maxProfit(arr);
         System.out.printf("Max profit = "+profit);
     }
 
-    public int maxProfit(int[] arr) {
+    // 🔑 Track min price so far, calculate today's profit, update max profit.
+    // Buy at lowest, sell at highest after it.
+    public int maxProfit(int[] prices) {
+        int minPrice = prices[0];
+        int maxProfit = 0;
 
-        int min = arr[0];        // Minimum price seen so far (best day to buy)
-        int profit = 0;          // Max profit seen so far
-        int currentProfit = 0;   // Profit if we sell today
-
-        for (int i = 0; i < arr.length; i++) {
-
-            currentProfit = arr[i] - min; // Profit if bought at min and sold today
-
-            if (profit < currentProfit) {
-                profit = currentProfit;   // Update max profit if today's is better
-            }
-
-            if (min > arr[i]) {
-                min = arr[i];             // Update min if today's price is lower
-            }
+        for (int price : prices) {
+            int profitToday = price - minPrice;
+            maxProfit = Math.max(maxProfit, profitToday);
+            minPrice = Math.min(minPrice, price);
         }
 
-        return profit;
+        return maxProfit;
     }
+
     /*Recap-->
     * min--> keeps track of lowest price so far.
     profit--> is updated if selling today gives more gain.*/

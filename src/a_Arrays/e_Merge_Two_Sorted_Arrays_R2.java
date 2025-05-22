@@ -43,14 +43,14 @@ nums2.length == n
 * */
 
 
-public class e_Merge_Two_Sorted_Arrays_R1 {
+public class e_Merge_Two_Sorted_Arrays_R2 {
     public static void main(String[] args) {
         int arr1[] = {1};
         int m = 1;
         int arr2[] = {};
         int n = 0;
 
-        e_Merge_Two_Sorted_Arrays_R1 mergeTwoSortedArrays = new e_Merge_Two_Sorted_Arrays_R1();
+        e_Merge_Two_Sorted_Arrays_R2 mergeTwoSortedArrays = new e_Merge_Two_Sorted_Arrays_R2();
         mergeTwoSortedArrays.mergeTwoSortedArray(arr1, m, arr2, n);
 
         for (int a : arr1) {
@@ -74,7 +74,7 @@ public class e_Merge_Two_Sorted_Arrays_R1 {
             }
         }
 
-        Arrays.sort(arr1, 0, m); // Sort the first m elements of arr1
+        Arrays.sort(arr1, 0, m); // Sort the first m elements of arr1 as they are the actual elements of array1 and remaining elements are place holders to copy elements from 2nd array
         Arrays.sort(arr2);      // Sort arr2
 
         // Merge arr2 into arr1
