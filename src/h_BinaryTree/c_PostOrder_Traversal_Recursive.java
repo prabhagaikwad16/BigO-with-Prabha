@@ -2,33 +2,32 @@ package h_BinaryTree;
 
 import java.util.List;
 
-public class b_PreOrder_Traversal {
+public class c_PostOrder_Traversal_Recursive {
     public static void main(String[] args) {
-
-        b_PreOrder_Traversal preOrderTraversal = new b_PreOrder_Traversal();
+        c_PostOrder_Traversal_Recursive postOrderTraversal = new c_PostOrder_Traversal_Recursive();
         TreeNode root = new TreeNode(1);
         root.left = new TreeNode(2);
         root.right = new TreeNode(3);
         root.left.left = new TreeNode(4);
         root.left.right = new TreeNode(5);
 
-        List<Integer> result = preOrderTraversal.preorderTraversal(root);
+        List<Integer> result = postOrderTraversal.postorderTraversal(root);
         System.out.println("Result = "+result);
     }
 
-    public List<Integer> preorderTraversal(TreeNode root) {
+    public List<Integer> postorderTraversal(TreeNode root) {
         List<Integer> result = new java.util.ArrayList<>();
-        preorder(root, result);
+        postorder(root, result);
         return result;
     }
 
-    private void preorder(TreeNode root, List<Integer> result){
+    private void postorder(TreeNode root, List<Integer> result){
         if(root == null){
             return;
         }
 
+        postorder(root.left,result);
+        postorder(root.right,result);
         result.add(root.val);
-        preorder(root.left,result);
-        preorder(root.right,result);
     }
 }

@@ -3,11 +3,11 @@ package h_BinaryTree;
 import java.util.ArrayList;
 import java.util.List;
 
-public class a_InOrder_Traversal {
+public class a_InOrder_Traversal_Recursive {
 
 
     public static void main(String[] args) {
-            a_InOrder_Traversal inOrderTraversal = new a_InOrder_Traversal();
+            a_InOrder_Traversal_Recursive inOrderTraversal = new a_InOrder_Traversal_Recursive();
             TreeNode root = new TreeNode(1);
             root.left = new TreeNode(2);
             root.right = new TreeNode(3);

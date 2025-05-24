@@ -19,11 +19,9 @@ public class d_CalculateHeight_Tree {
         if(root == null){
             return 0;
         }
-        int l =  maxDepth(root.left);
-        int r = maxDepth(root.right);
 
-        //every time 1 gets added to the height among the max height.
-        return 1+Math.max(l,r);
+        //1 for current node + Max(leftHeight,rightHeight);
+        return 1+Math.max(maxDepth(root.left),maxDepth(root.right));
     }
 
 }
