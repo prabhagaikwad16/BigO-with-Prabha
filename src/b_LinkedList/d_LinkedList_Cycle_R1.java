@@ -33,7 +33,7 @@ Constraints:
 The number of the nodes in the list is in the range [0, 104].
 -105 <= Node.val <= 105
 pos is -1 or a valid index in the linked-list.*/
-public class d_LinkedList_Cycle {
+public class d_LinkedList_Cycle_R1 {
 
     public static void main(String[] args) {
         /*
@@ -47,7 +47,7 @@ public class d_LinkedList_Cycle {
         head.next.next.next = new ListNode(4);
         head.next.next.next.next = head.next;
 
-        d_LinkedList_Cycle linkedListCycle = new d_LinkedList_Cycle();
+        d_LinkedList_Cycle_R1 linkedListCycle = new d_LinkedList_Cycle_R1();
         boolean hasCycle = linkedListCycle.hasCycle(head);
         System.out.println("Has cycle: " + hasCycle);
     }

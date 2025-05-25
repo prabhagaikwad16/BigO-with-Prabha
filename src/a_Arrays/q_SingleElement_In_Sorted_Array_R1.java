@@ -1,9 +1,9 @@
 package a_Arrays;
 
-public class q_SingleElement_In_Sorted_Array {
+public class q_SingleElement_In_Sorted_Array_R1 {
     public static void main(String[] args) {
 
-        q_SingleElement_In_Sorted_Array singleElementInSortedArray = new q_SingleElement_In_Sorted_Array();
+        q_SingleElement_In_Sorted_Array_R1 singleElementInSortedArray = new q_SingleElement_In_Sorted_Array_R1();
         int arr[] = {3,3,7,7,10,11,11};
         int result = singleElementInSortedArray.singleNonDuplicate(arr);
         System.out.println("Result = "+result);

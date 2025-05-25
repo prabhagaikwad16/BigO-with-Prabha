@@ -25,7 +25,7 @@ The number of nodes in the list is the range [0, 5000].
 -5000 <= Node.val <= 5000
  */
 
-public class a_ReverseLinkedList {
+public class a_ReverseLinkedList_R1 {
     public static void main(String[] args) {
         // Create a sample linked list: 1 -> 2 -> 3 -> 4 -> 5
         ListNode head = new ListNode(1);
@@ -35,7 +35,7 @@ public class a_ReverseLinkedList {
         head.next.next.next.next = new ListNode(5);
 
         // Reverse the linked list
-        a_ReverseLinkedList reverseLinkedList = new a_ReverseLinkedList();
+        a_ReverseLinkedList_R1 reverseLinkedList = new a_ReverseLinkedList_R1();
         ListNode reversedHead = reverseLinkedList.reverseList(head);
 
         // Print the reversed linked list

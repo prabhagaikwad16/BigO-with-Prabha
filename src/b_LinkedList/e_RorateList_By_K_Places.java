@@ -2,19 +2,14 @@ package b_LinkedList;
 
 /*Given the head of a linked list, rotate the list to the right by k places.
 
-
-
 Example 1:
-
 
 Input: head = [1,2,3,4,5], k = 2
 Output: [4,5,1,2,3]
 Example 2:
 
-
 Input: head = [0,1,2], k = 4
 Output: [2,0,1]
-
 
 Constraints:
 
@@ -56,6 +51,13 @@ public class e_RorateList_By_K_Places {
         }
 
         // Update k to k % length to handle cases where k >= length, then calculate the effective rotation
+        
+            /*Logic for k = length - (k % length):
+            Handles cases where k >= length by reducing unnecessary rotations.
+            k % length gives the effective rotations needed.
+            Subtracting from length adjusts the rotation to the left-to-right direction.
+            Condition if (k == length):
+            If k equals the length of the list, the list remains unchanged, so return head.*/
         k = length - (k % length);
         if (k == length) {
             return head;

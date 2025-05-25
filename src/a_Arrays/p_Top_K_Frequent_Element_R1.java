@@ -1,15 +1,35 @@
 package a_Arrays;
 
-import java.util.Comparator;
+/*Given an integer array nums and an integer k, return the k most frequent elements. You may return the answer in any order.
+
+
+
+Example 1:
+
+Input: nums = [1,1,1,2,2,3], k = 2
+Output: [1,2]
+Example 2:
+
+Input: nums = [1], k = 1
+Output: [1]
+
+
+Constraints:
+
+1 <= nums.length <= 105
+-104 <= nums[i] <= 104
+k is in the range [1, the number of unique elements in the array].
+It is guaranteed that the answer is unique.
+ */
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.PriorityQueue;
-import java.util.concurrent.ConcurrentHashMap;
 
-public class p_Top_K_Frequent_Element {
+public class p_Top_K_Frequent_Element_R1 {
 
     public static void main(String[] args) {
-        p_Top_K_Frequent_Element topKFrequentElement = new p_Top_K_Frequent_Element();
+        p_Top_K_Frequent_Element_R1 topKFrequentElement = new p_Top_K_Frequent_Element_R1();
         int result[] = topKFrequentElement.topKFrequent(new int[]{10, 20, 30, 40, 50}, 3);
         for(int i: result){
             System.out.print(i+" ");
@@ -29,20 +49,15 @@ public class p_Top_K_Frequent_Element {
                 map.put(i,1);
             }
         }
-
-
-        //IMP--> Revise implementation of Comparator.
-        PriorityQueue<Map.Entry<Integer,Integer>> minHeap = new PriorityQueue(new Comparator<Map.Entry<Integer,Integer>>(){
-            public int compare(Map.Entry<Integer,Integer> a, Map.Entry<Integer, Integer> b){
-                return a.getValue().compareTo(b.getValue());
-            }
-        });
+        //Use PriorityQueue to keep track of the top k frequent elements.
+        //IMP Note--> Pass comparator to the PriorityQueue to sort the elements based on their frequency.
+        PriorityQueue<Map.Entry<Integer,Integer>> minHeap = new PriorityQueue(Map.Entry.<Integer, Integer>comparingByValue());
 
         for(Map.Entry<Integer,Integer> entry: map.entrySet()){
             minHeap.add(entry);
             if(minHeap.size()>k){
                 //Remove element from PriorityQueue if size exceeds k.
-                Map.Entry<Integer,Integer> element = minHeap.poll();
+                minHeap.poll();
             }
         }
 

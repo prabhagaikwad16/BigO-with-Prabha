@@ -24,7 +24,7 @@ Constraints:
 
 The number of nodes in the list is in the range [1, 100].
 1 <= Node.val <= 100*/
-public class b_Middle_Of_LinkedList {
+public class b_Middle_Of_LinkedList_R1 {
     public static void main(String[] args) {
 
         ListNode head = new ListNode(1);
@@ -33,7 +33,7 @@ public class b_Middle_Of_LinkedList {
         head.next.next.next = new ListNode(4);
         head.next.next.next.next = new ListNode(5);
 
-        b_Middle_Of_LinkedList middleOfLinkedList = new b_Middle_Of_LinkedList();
+        b_Middle_Of_LinkedList_R1 middleOfLinkedList = new b_Middle_Of_LinkedList_R1();
         ListNode middleNode = middleOfLinkedList.middleNode(head);
         System.out.println("Middle Node: " + middleNode.val); // Output: 3
     }
